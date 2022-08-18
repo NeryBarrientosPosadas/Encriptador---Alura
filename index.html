@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador - Alura - Nery Barrientos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img class="imglogo" src="logo.png" alt="Logo de la aplicación">
+            </div>
+            <div class="ContenedorTextarea">
+                <textarea class="contenedortext" id="textarea" placeholder="Ingrese el texto aqui" rows="8" cols="30"
+                    autofocus></textarea>
+            </div>
+            <div class="ContenedorTextareaMensaje">
+                <textarea class="contenedortext" id="textareaderecha" rows="8" cols="30"
+                    style="border: 5px;"></textarea>
+            </div>
+            <div class="Mensaje">
+                <img src="alerta.png" alt="Advertencia" class="informacion">
+                <p> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="botonencriptar" type="button" id="button_Encriptar"
+                    onclick="encriptar()">Encriptar</button>
+                <button class="botondesencriptar" type="button" id="button_Desencriptar"
+                    onclick="desencriptar()">Desencriptar</button>
+            </div>
+            <div class="resultadovacio">
+                <img src="Muñeco.png" alt="Imagen resultado vacio" class="muñeco">
+            </div>
+            <button class="botoncopiar" id="copiar" type="button" onclick="copyToClipBoard()">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <a href="www.linkedin.com/in/NeryBarrientos" target="_blank"><img src="linkedinIcon.png" alt="Linkedin"></a>
+        <a href="https://github.com/NeryBarrientosPosadas" target="_blank"><img src="githubIcon.png" alt="Github"></a>
+        <p>By Nery Barrientos</p>
+    </footer>
+</body>
+<script>
+    function encriptar() {
+        var texto = document.getElementById("textarea").value;
+        let textoCifrado = texto.replace(/e/igm, "enter");
+        textoCifrado = textoCifrado.replace(/o/igm, "ober");
+        textoCifrado = textoCifrado.replace(/i/igm, "imes");
+        textoCifrado = textoCifrado.replace(/a/igm, "ai");
+        textoCifrado = textoCifrado.replace(/u/igm, "ufat");
+        document.getElementById("textareaderecha").value = textoCifrado;
+    }
+    function desencriptar() {
+        var texto = document.getElementById("textarea").value;
+        let textoCifrado = texto.replace(/enter/igm, "e");
+        textoCifrado = textoCifrado.replace(/ober/igm, "o");
+        textoCifrado = textoCifrado.replace(/imes/igm, "i");
+        textoCifrado = textoCifrado.replace(/ai/igm, "a");
+        textoCifrado = textoCifrado.replace(/ufat/igm, "u");
+        document.getElementById("textareaderecha").value = textoCifrado;
+    }
+    function copyToClipBoard() {
+
+        var content = document.getElementById('textareaderecha');
+        content.select();
+        document.execCommand('copy');
+    }
+</script>
+
+</html>
