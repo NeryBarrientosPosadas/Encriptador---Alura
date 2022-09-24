@@ -7,42 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador/Desencriptador - Alura - Nery Barrientos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
+    <header>
+        <img class="imglogo" src="imagenes/logo.png" alt="Logo de la aplicación">
+    </header>
     <main>
-        <div class="container">
-            <div class="logo">
-                <img class="imglogo" src="imagenes/logo.png" alt="Logo de la aplicación">
-            </div>
-            <div class="ContenedorTextarea">
-                <textarea class="contenedortext" id="textarea" placeholder="Ingrese el texto aqui" rows="8" cols="30"
-                    autofocus></textarea>
-            </div>
-            <div class="ContenedorTextareaMensaje">
-                <textarea class="contenedortext" id="textareaderecha" rows="8" cols="30"
-                    style="border: 5px;"></textarea>
-            </div>
-            <div class="Mensaje">
-                <img src="imagenes/alerta.png" alt="Advertencia" class="informacion">
-                <p> Solo letras minúsculas y sin acentos</p>
-            </div>
+        <div class="Contenedor_textoencriptar">
+            <textarea class="mensaje" id="textarea" placeholder="Ingrese el texto aqui"
+                autofocus></textarea>
+            <img src="imagenes/alerta.png" alt="Advertencia" class="informacion">
+            <p> Solo letras minúsculas y sin acentos</p>
             <div class="botones">
                 <button class="botonencriptar" type="button" id="button_Encriptar"
                     onclick="encriptar()">Encriptar</button>
                 <button class="botondesencriptar" type="button" id="button_Desencriptar"
                     onclick="desencriptar()">Desencriptar</button>
             </div>
-            <div class="resultadovacio">
-                <img src="imagenes/Muñeco.png" alt="Imagen resultado vacio" class="muñeco">
-            </div>
+        </div>
+        <div class="Contenedor_resultado">
+            <textarea class="resultado" id="textareaderecha"></textarea>
             <button class="botoncopiar" id="copiar" type="button" onclick="copyToClipBoard()">Copiar</button>
         </div>
     </main>
     <footer>
-        <a href="www.linkedin.com/in/NeryBarrientos" target="_blank"><img src="imagenes/linkedinIcon.png" alt="Linkedin"></a>
-        <a href="https://github.com/NeryBarrientosPosadas" target="_blank"><img src="imagenes/githubIcon.png" alt="Github"></a>
+        <a href="www.linkedin.com/in/NeryBarrientos" target="_blank"><img src="imagenes/linkedinIcon.png"
+                alt="Linkedin"></a>
+        <a href="https://github.com/NeryBarrientosPosadas" target="_blank"><img src="imagenes/githubIcon.png"
+                alt="Github"></a>
         <p>By Nery Barrientos</p>
     </footer>
 </body>

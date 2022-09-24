@@ -118,17 +118,19 @@ main {
 .botoncopiar{
     border: none;
     padding: 24px;
-    gap: 8px;
     background: #0A3871;
     border-radius: 24px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    align-items: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: white;
 }
+
 
 .botoncopiar:hover {
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
@@ -152,208 +154,3 @@ footer img {
 footer p {
     font-size: 12px;
 }   
-
-/* main {
-    background-color: #F3F5FC;
-}
-
-.logo {
-    margin: 2% 0 0 2%;
-    width: 120px;
-    height: 48px;
-}
-
-.Contenedor_textoencriptar {
-    background-color: transparent;
-    position: relative;
-    top: 20px;
-    left: 100px;
-    bottom: 808px;
-    right: 623px;
-    width: 577px;
-    height: 48px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    color: #0A3871;
-}
-
-textarea {
-    border: 2px;
-    background-color: transparent  ;
-    resize: none;
-    outline: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    color: #0A3871;
-}
-
-.botones {
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    bottom: 100px;
-}
-
-.botonencriptar {
-    border: none;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    width: 328px;
-    height: 67px;
-    background: #0A3871;
-    border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: white;
-}
-.botonencriptar:hover {
-    color: rgba(255, 255, 255, 1) !important;
-    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-    transition: all 0.2s ease;
-  }
-
-.botondesencriptar {
-    box-sizing: border-box;
-     Auto layout 
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    width: 328px;
-    height: 67px;
-    Light gray 
-    background: #D8DFE8;
-    Dark blue/dark-blue-300
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    Inside auto layout
-    flex: none;
-    order: 1;
-}
-
-.botondesencriptar:hover {
-    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-    transition: all 0.2s ease;
-  }
-
-.botoncopiar{
-    position: absolute;
-    width: 100px;
-    height: 67px;
-    left: 900px;
-    bottom: 200px;
-    border: none;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    background: #0A3871;
-    border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: white;
-}
-
-.botoncopiar:hover {
-    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-    transition: all 0.2s ease;
-  }
-
-.resultadovacio {
-    position: absolute;
-    border-radius: 50px;
-    width: 400px;
-    bottom: 40px;
-    top: 40px;
-    right: 40px;
-    background: #FFFFFF;
-    text-align: center;
-}
-
-.muñeco {
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    left: 32px;
-    right: 32px;
-    top: 200px;
-}
-
-.Mensaje {
-    position: absolute;
-    width: 300px;
-    height: 18px;
-    left: 240px;
-    bottom: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-}
-
-footer {
-    position: absolute;
-    color: #495057;
-    text-align: center;
-    font-size: 12px;
-    bottom: 20px;
-    left: 30%;
-    right: 30%;
-}
-
-footer img {
-    height: 32px;
-    width: 32px;
-}
-
-.Contenedor_resultado{
-        background-color: #F3F5FC;
-        position: relative;
-        top: -30px;
-        left: 630px;
-        width: 577px;
-        height: 48px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 150%;
-        color: #0A3871;
-}
-textareaderecha{
-    border: 2px;
-    background-color: #F3F5FC;
-    resize: none;
-    outline: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    color: #0A3871;
-    border: 5px;
-} */
